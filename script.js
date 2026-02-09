@@ -5,7 +5,7 @@ const products = [];
 for (let i = 1; i <= 106; i++) {
     products.push({
         id: i,
-        name: "Produkt " + i,
+        name: "Arra " + i,
         price: (Math.random() * 10 + 2).toFixed(2),
         image: "images/product" + i + ".jpg",
         description: "Përshkrimi i produktit " + i
