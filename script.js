@@ -7,8 +7,8 @@ for (let i = 1; i <= 106; i++) {
         id: i,
         name: "Arra " + i,
         price: (Math.random() * 10 + 2).toFixed(2),
-        image: "images/product" + i + ".jpg",
-        description: "Përshkrimi i produktit " + i
+        image: "arra.jpg" + i + "arra.jpg",
+        description: "“Arrë e freskët, e pasur me shije natyrale dhe pak e ëmbël, perfekte për shijime të shëndetshme ose për gatime dhe ëmbëlsira. Çdo arra ka guaskë të fortë që mbron bërthamën e butë dhe të yndyrshme brenda, duke e bërë atë të mbajë aromën dhe freskinë. Një zgjedhje e shkëlqyer për ata që duan ushqim të shëndetshëm dhe të shijshëm çdo ditë!” " + i
     });
 }
 
