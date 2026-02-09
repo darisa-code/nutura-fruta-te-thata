@@ -1,26 +1,13 @@
-let selectedProduct = "";
-let selectedPrice = 0;
+// 
+const products = [];
 
-function openOrder(name, price) {
-    selectedProduct = name;
-    selectedPrice = price;
-    document.getElementById("productName").innerText = name;
-    document.getElementById("orderModal").style.display = "block";
+// Gjenerojmë 106 produkte automatikisht
+for (let i = 1; i <= 106; i++) {
+    products.push({
+        id: i,
+        name: "Produkt " + i,
+        price: (Math.random() * 10 + 2).toFixed(2), // çmimi nga 2€ deri 12€
+        image: "images/product" + i + ".jpg",        // vendos fotot në folder /images
+        description: "Përshkrimi i produktit " + i
+    });
 }
-
-function closeModal() {
-    document.getElementById("orderModal").style.display = "none";
-}
-
-function sendOrder() {
-    const name = document.getElementById("customerName").value;
-    const email = document.getElementById("customerEmail").value;
-
-    alert("Porosia u dërgua! (Duhet të lidhësh EmailJS për funksionim real)");
-}
-
-function payWithCard() {
-    alert("Lidhe Stripe për pagesë reale me kartë.");
-}
-
-
