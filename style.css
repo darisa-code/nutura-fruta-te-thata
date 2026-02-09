@@ -1,87 +1,97 @@
 body {
+    margin:0;
     font-family: 'Poppins', sans-serif;
-    margin: 0;
-    background: #f5f5f0;
-    color: #333;
+    background:#f8f8f4;
+    color:#333;
 }
 
 header {
-    background: #556b2f;
-    color: white;
-    text-align: center;
-    padding: 30px;
+    display:flex;
+    justify-content:space-between;
+    padding:20px 50px;
+    background:#556b2f;
+    color:white;
+    position:sticky;
+    top:0;
+}
+
+.logo {
+    font-family:'Playfair Display', serif;
+    font-size:28px;
+}
+
+nav a {
+    color:white;
+    margin-left:20px;
+    text-decoration:none;
+}
+
+.hero {
+    text-align:center;
+    padding:80px 20px;
+    background:linear-gradient(135deg,#6b8e23,#556b2f);
+    color:white;
 }
 
 .products {
-    padding: 50px;
-    text-align: center;
+    padding:50px;
+    text-align:center;
 }
 
 .product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
 }
 
 .product {
-    background: white;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.product:hover {
+    transform:translateY(-5px);
 }
 
 .product img {
-    width: 100%;
-    border-radius: 10px;
+    width:100%;
+    border-radius:10px;
 }
 
 .price {
-    color: #556b2f;
-    font-weight: bold;
-    font-size: 18px;
+    color:#556b2f;
+    font-weight:bold;
 }
 
 button {
-    background: #6b8e23;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 8px;
-    cursor: pointer;
-    margin-top: 10px;
+    background:#6b8e23;
+    border:none;
+    color:white;
+    padding:10px 15px;
+    border-radius:8px;
+    cursor:pointer;
 }
-
-button:hover {
-    background: #556b2f;
-}
-
-/* Modal */
 
 .modal {
-    display: none;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.5);
+    display:none;
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
 }
 
 .modal-content {
-    background: white;
-    padding: 30px;
-    margin: 10% auto;
-    width: 300px;
-    border-radius: 10px;
-    text-align: center;
+    background:white;
+    padding:30px;
+    margin:5% auto;
+    width:400px;
+    border-radius:10px;
 }
 
-input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-}
-
-.close {
-    float: right;
-    cursor: pointer;
+.large {
+    width:600px;
 }
 
