@@ -3,17 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NUTURA | Fruta të Thata</title>
+<title>Nutura | Fruta të Thata</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins&family=Playfair+Display&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
 <header>
-    <div class="logo">NUTURA</div>
-    <div class="header-center">
-        <h1>NUTURA FRUTA TË THATA</h1>
-        <p class="slogan">Produkte natyrale dhe të shëndetshme</p>
+    <div class="logo">Nutura</div>
+
+    <div class="center">
+        <h1>Nutura Fruta të Thata</h1>
+        <p class="slogan">Shije natyrale, cilësi premium</p>
     </div>
 </header>
 
@@ -21,15 +24,15 @@
     <div id="productGrid"></div>
 </section>
 
-<!-- Modal -->
-<div id="productModal" class="modal">
+<!-- MODAL -->
+<div id="modal" class="modal">
     <div class="modal-content">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <img id="modalImage" src="" alt="">
+        <span onclick="closeModal()" class="close">&times;</span>
+        <img id="modalImg">
         <h2 id="modalName"></h2>
         <p id="modalDesc"></p>
         <p id="modalPrice"></p>
-        <button onclick="addToCartModal()">Porosit</button>
+        <button onclick="orderNow()">Porosit</button>
     </div>
 </div>
 
