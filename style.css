@@ -1,35 +1,83 @@
-#productGrid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    padding: 20px;
+body{
+    margin:0;
+    font-family:Poppins;
+    background:#f7f7f2;
 }
 
-.small-box {
-    width: 100px;
-    height: 100px;
-    background:#6b8e23;
-    color:white;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    border-radius:8px;
-    cursor:pointer;
-    font-weight:bold;
+header{
+    position:relative;
+    padding:30px;
     text-align:center;
-    transition:0.2s;
+    background:#556b2f;
+    color:white;
 }
 
-.small-box:hover {
-    transform:scale(1.1);
+.logo{
+    position:absolute;
+    top:20px;
+    left:30px;
+    font-weight:bold;
+    font-size:20px;
 }
 
-.modal { display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:1000; }
-.modal-content { background:white; margin:5% auto; padding:20px; width:350px; border-radius:10px; text-align:center; position:relative; }
-.modal-content img { width:100%; border-radius:10px; margin-bottom:10px; }
-.close { position:absolute; top:10px; right:15px; cursor:pointer; font-size:22px; }
-button { background:#6b8e23; color:white; padding:10px 15px; border:none; border-radius:8px; cursor:pointer; font-size:16px; margin-top:10px; }
+.center h1{
+    font-family:'Playfair Display';
+    margin:0;
+}
+
+.slogan{
+    font-style:italic;
+    opacity:0.8;
+}
+
+.products{
+    padding:40px;
+}
+
+#productGrid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.product{
+    background:white;
+    border-radius:12px;
+    padding:10px;
+    text-align:center;
+    cursor:pointer;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.product img{
+    width:100%;
+    height:120px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.modal{
+    display:none;
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+}
+
+.modal-content{
+    background:white;
+    margin:10% auto;
+    padding:20px;
+    width:300px;
+    border-radius:10px;
+    text-align:center;
+}
+
+.close{
+    float:right;
+    cursor:pointer;
+}
+
 
 
 
