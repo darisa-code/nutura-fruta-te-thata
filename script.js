@@ -1,4 +1,4 @@
-const products = [
+ const products = [
 "Arra","Arra Braziliane","Stika","Stika e kuqe","Bajame",
 "Qiqra te pjekura","Stika te qeruara","Lajthi e pjekur",
 "Rrush i zi","Kumbulla","Hurma arabe","Kajsi",
