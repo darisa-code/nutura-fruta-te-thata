@@ -1,70 +1,209 @@
-const phone = "355XXXXXXXXX";
-
 const products = [
-{ name:"Arra", img:"arra.jpg", desc:"Arra natyrale dhe shumë ushqyese." },
-{ name:"Arra Braziliane", img:"arra-braziliane.jfif", desc:"Të pasura me selen dhe energji." },
-{ name:"Arra Pecan", img:"arra-pecan.jfif", desc:"Shije e butë dhe premium." },
-{ name:"Arre Makadame", img:"arre-makadame.webp", desc:"Arra luksoze dhe kremoze." },
-{ name:"Bajame", img:"bajame.jpg", desc:"Bajame të freskëta dhe proteinike." },
-{ name:"Bajame pa kripë", img:"bajame-pa-kripe.jfif", desc:"Zgjedhje e shëndetshme." },
-{ name:"Bajame vendi", img:"bajame-vendi.jpg", desc:"Cilësi tradicionale vendase." },
-{ name:"Boronica", img:"boronica.jpg", desc:"Antioksidantë të fuqishëm." },
-{ name:"Fara kungulli", img:"fara-kungulli.jfif", desc:"Snack shumë i shëndetshëm." },
-{ name:"Fasule pllaqi", img:"fasule-pllaqi.jfif", desc:"Ideale për gatime tradicionale." },
-{ name:"Fik i thatë", img:"fik.jpg", desc:"I ëmbël dhe energjik." },
-{ name:"Huamitos", img:"huamitos.jfif", desc:"Shije unike dhe interesante." },
-{ name:"Hurma parajsa", img:"hurma-parajsa.jfif", desc:"Hurma shumë të buta." },
-{ name:"Hurma arabe", img:"hurma-arabe.jpg", desc:"Premium dhe shumë të ëmbla." },
-{ name:"Kajsi", img:"kajsi.jfif", desc:"Kajsi të thata të shijshme." },
-{ name:"Kikirik", img:"kikirik.jfif", desc:"Snack klasik me kripë." },
-{ name:"Kivi i thatë", img:"kivi.jfif", desc:"Frut ekzotik shumë i mirë." },
-{ name:"Kumbulla", img:"kumbulla.png", desc:"E mirë për tretje." },
-{ name:"Lajthi", img:"lajthi.jfif", desc:"Krokante dhe të shijshme." },
-{ name:"Misër", img:"miser.jfif", desc:"Snack i pjekur krokant." },
-{ name:"Mjaltë", img:"mjalte.jpg", desc:"100% natyral." },
-{ name:"Qiqra", img:"qiqra.jpg", desc:"Snack proteinik." },
-{ name:"Papaya", img:"papaya.jfif", desc:"Frut tropikal i thatë." },
-{ name:"Rrush i bardhë", img:"rrush-bardhe.jfif", desc:"I ëmbël dhe i lehtë." },
-{ name:"Rrush i zi", img:"rrush-zi.jpg", desc:"Shije intensive." },
-{ name:"Stika qeruara", img:"stika-qeruara.jpg", desc:"Snack i lehtë." },
-{ name:"Stika të kuqe", img:"stika-kuqe.jfif", desc:"Me shije të veçantë." },
-{ name:"Stika", img:"stika.jfif", desc:"Klasike dhe e dashur." },
-{ name:"Vaj ulliri", img:"vaj-ulliri.jfif", desc:"Cilësi premium." }
+{
+name:"Arra",
+price:1200,
+image:"images/arra.jpg",
+desc:"Arra natyrale, të pasura me omega-3 dhe shumë të shëndetshme."
+},
+{
+name:"Arra Braziliane",
+price:1800,
+image:"images/arrabraziliane.jpg",
+desc:"Arra braziliane me shije të pasur dhe burim i mirë i selenit."
+},
+{
+name:"Arra Pecan",
+price:2000,
+image:"images/arrapecan.jpg",
+desc:"Arra pecan premium, ideale për snacks dhe ëmbëlsira."
+},
+{
+name:"Arra Makadame",
+price:2500,
+image:"images/arremakadame.jpg",
+desc:"Arra makadame shumë të buta dhe me shije luksoze."
+},
+{
+name:"Bajame",
+price:900,
+image:"images/bajame.jpg",
+desc:"Bajame të freskëta dhe të pasura me proteina."
+},
+{
+name:"Bajame pa kripë",
+price:950,
+image:"images/bajamepakripe.jpg",
+desc:"Bajame natyrale pa kripë, ideale për dietë."
+},
+{
+name:"Bajame vendi",
+price:1000,
+image:"images/bajamevendi.jpg",
+desc:"Bajame vendase me cilësi të lartë."
+},
+{
+name:"Boronica e Tropojes",
+price:1500,
+image:"images/boronica.jpg",
+desc:"Boronica të thata nga Tropoja, shumë të shëndetshme."
+},
+{
+name:"Fara kungulli",
+price:700,
+image:"images/farakungulli.jpg",
+desc:"Fara kungulli të qëruara, perfekte për snack."
+},
+{
+name:"Fasule pllaqi",
+price:400,
+image:"images/fasulepllaqi.jpg",
+desc:"Fasule të bardha për gatime tradicionale."
+},
+{
+name:"Fik i thatë",
+price:800,
+image:"images/fikithat.jpg",
+desc:"Fik i thatë i ëmbël dhe energjik."
+},
+{
+name:"Huamitos",
+price:900,
+image:"images/huamitos.jpg",
+desc:"Produkt i veçantë me shije ekzotike."
+},
+{
+name:"Hurma arabe",
+price:1200,
+image:"images/hurmaarabe.jpg",
+desc:"Hurma arabe shumë të ëmbla dhe cilësore."
+},
+{
+name:"Hurma",
+price:1000,
+image:"images/hurma.jpg",
+desc:"Hurma natyrale për energji të shpejtë."
+},
+{
+name:"Hurma parajsa",
+price:1300,
+image:"images/hurmaparajsa.jpg",
+desc:"Hurma premium me shije të veçantë."
+},
+{
+name:"Kajsi të thata",
+price:900,
+image:"images/kajsitethata.jpg",
+desc:"Kajsi të thata të ëmbla dhe të shëndetshme."
+},
+{
+name:"Kikirik me kripë",
+price:600,
+image:"images/kikirik.jpg",
+desc:"Kikirik të pjekur me kripë, snack perfekt."
+},
+{
+name:"Kivi i thatë",
+price:1100,
+image:"images/kivi.jpg",
+desc:"Kivi i thatë me shije tropikale."
+},
+{
+name:"Kumbulla",
+price:850,
+image:"images/kumbulla.jpg",
+desc:"Kumbulla të thata të shijshme dhe të shëndetshme."
+},
+{
+name:"Lajthi",
+price:1200,
+image:"images/lajthi.jpg",
+desc:"Lajthi të freskëta dhe shumë të shijshme."
+},
+{
+name:"Misër i pjekur",
+price:500,
+image:"images/miser.jpg",
+desc:"Misër i pjekur krokant."
+},
+{
+name:"Mjaltë",
+price:1500,
+image:"images/mjalte.jpg",
+desc:"Mjaltë natyral i pastër."
+},
+{
+name:"Papaya",
+price:1000,
+image:"images/papaya.jpg",
+desc:"Papaya e thatë me shije tropikale."
+},
+{
+name:"Qiqra të pjekura",
+price:600,
+image:"images/qiqra.jpg",
+desc:"Qiqra krokante dhe shumë të shijshme."
+},
+{
+name:"Rrush i thatë",
+price:700,
+image:"images/rrush.jpg",
+desc:"Rrush i thatë i ëmbël dhe energjik."
+},
+{
+name:"Stika",
+price:900,
+image:"images/stika.jpg",
+desc:"Stika të freskëta dhe të shijshme."
+},
+{
+name:"Stika të qëruara",
+price:1100,
+image:"images/stikaqeruara.jpg",
+desc:"Stika pa lëkurë, gati për konsum."
+},
+{
+name:"Stika të kuqe",
+price:1000,
+image:"images/stikakuqe.jpg",
+desc:"Stika të kuqe me shije të veçantë."
+},
+{
+name:"Vaj ulliri",
+price:1200,
+image:"images/vajulliri.jpg",
+desc:"Vaj ulliri ekstra i virgjër."
+}
 ];
 
 const grid = document.getElementById("productGrid");
 
 products.forEach((p,i)=>{
-    grid.innerHTML += `
-        <div class="product" onclick="openModal(${i})">
-            <img src="images/${p.img}">
-            <h4>${p.name}</h4>
-        </div>
-    `;
+grid.innerHTML += `
+<div class="product" onclick="openModal(${i})">
+<img src="${p.image}">
+<h4>${p.name}</h4>
+</div>
+`;
 });
 
 const modal = document.getElementById("modal");
-const modalName = document.getElementById("modalName");
-const modalDesc = document.getElementById("modalDesc");
-const modalImg = document.getElementById("modalImg");
-
-let selected;
 
 function openModal(i){
-    selected = products[i];
-    modal.style.display="block";
-    modalName.innerText = selected.name;
-    modalDesc.innerText = selected.desc;
-    modalImg.src = "images/" + selected.img;
+const p = products[i];
+modal.style.display="block";
+document.getElementById("modalName").innerText=p.name;
+document.getElementById("modalDesc").innerText=p.desc;
+document.getElementById("modalPrice").innerText="Çmimi: "+p.price+" Lek";
+document.getElementById("modalImg").src=p.image;
+
+window.selectedProduct = p.name;
 }
 
 function closeModal(){
-    modal.style.display="none";
+modal.style.display="none";
 }
 
 function orderNow(){
-    const msg = encodeURIComponent("Dua te porosis: " + selected.name);
-    window.open("https://wa.me/" + phone + "?text=" + msg);
+window.open("https://wa.me/355XXXXXXXXX?text=Dua%20te%20porosis:%20"+window.selectedProduct);
 }
-
 
