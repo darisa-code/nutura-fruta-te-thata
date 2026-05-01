@@ -1,136 +1,66 @@
-const phoneNumber = "355XXXXXXXXX"; // VENDOS NUMRIN TEND
+const number = "+355 69 543 2222"; // ndrysho numrin këtu
 
 const products = [
-{
-name:"Arra",
-price:"1200 Lek/kg",
-image:"images/arra.jpg",
-desc:"Arra natyrale, të pasura me omega-3 dhe shumë të shëndetshme për zemrën."
-},
-{
-name:"Arra Braziliane",
-price:"1800 Lek/kg",
-image:"images/arrabraziliane.jfif",
-desc:"Arra braziliane premium, burim i selenit dhe energjisë natyrale."
-},
-{
-name:"Arra Pecan",
-price:"2000 Lek/kg",
-image:"images/arrapecan.jfif",
-desc:"Arra pecan të buta dhe shumë të shijshme, ideale për snack dhe ëmbëlsira."
-},
-{
-name:"Arre Makadame",
-price:"2500 Lek/kg",
-image:"images/arremakadame.webp",
-desc:"Arra makadame luksoze, shumë të pasura dhe me shije të veçantë."
-},
-{
-name:"Bajame",
-price:"1400 Lek/kg",
-image:"images/bajame.jpg",
-desc:"Bajame të freskëta dhe të pasura me proteina dhe fibra."
-},
-{
-name:"Bajame Vendit",
-price:"1300 Lek/kg",
-image:"images/bajamevendi.jpg",
-desc:"Bajame shqiptare, natyrale dhe me shije autentike."
-},
-{
-name:"Boronica Tropoje",
-price:"2200 Lek/kg",
-image:"images/boronica-tropoje.jpg",
-desc:"Boronica nga Tropoja, shumë të pasura me antioksidantë."
-},
-{
-name:"Fik i Thate",
-price:"900 Lek/kg",
-image:"images/fikithat.png",
-desc:"Fik të thatë të ëmbël dhe energjik."
-},
-{
-name:"Hurma Arabe",
-price:"800 Lek/kg",
-image:"images/hurma-arabe.jpg",
-desc:"Hurma të buta dhe shumë të ëmbla, ideale për energji."
-},
-{
-name:"Kajsi të Thata",
-price:"1000 Lek/kg",
-image:"images/kajsitethata.jfif",
-desc:"Kajsi të thata me shije të freskët dhe natyrale."
-},
-{
-name:"Kikirik me Kripë",
-price:"700 Lek/kg",
-image:"images/kikirikmekrip.jfif",
-desc:"Kikirik të pjekur me kripë, snack perfekt."
-},
-{
-name:"Kivi i Thate",
-price:"1500 Lek/kg",
-image:"images/kiviithat.jfif",
-desc:"Kivi i thatë me shije ekzotike dhe të veçantë."
-},
-{
-name:"Kumbulla",
-price:"900 Lek/kg",
-image:"images/kumbulla.png",
-desc:"Kumbulla të thata për tretje dhe shëndet."
-},
-{
-name:"Lajthi",
-price:"1400 Lek/kg",
-image:"images/lajthi.jfif",
-desc:"Lajthi të freskëta dhe të shijshme."
-},
-{
-name:"Mjalte",
-price:"1200 Lek/kg",
-image:"images/mjalte.jpg",
-desc:"Mjaltë natyral shqiptar, shumë i shëndetshëm."
-}
+{name:"Arra",price:900,desc:"Arra të freskëta dhe të pasura me omega-3.",img:"arrash.jpg"},
+{name:"Arra Braziliane",price:1200,desc:"Burim i selenit dhe energjisë.",img:"arrabraziliane.jpg"},
+{name:"Arra Pecan",price:1300,desc:"Shije e ëmbël dhe teksturë kremoze.",img:"arrapecan.jpg"},
+{name:"Arra Makadame",price:1500,desc:"Premium, shumë të buta dhe të shijshme.",img:"arramakadame.jpg"},
+{name:"Bajame",price:800,desc:"Bajame të pastra dhe të shëndetshme.",img:"bajame.jpg"},
+{name:"Bajame pa kripë",price:850,desc:"Ideale për dietë dhe ushqim të shëndetshëm.",img:"bajamepakripe.jpg"},
+{name:"Bajame vendi",price:900,desc:"Produkt vendas me cilësi të lartë.",img:"bajamevendi.jpg"},
+{name:"Boronica Tropoje",price:1400,desc:"Superfruit me antioksidantë.",img:"boronicatropoje.jpg"},
+{name:"Fara kungulli",price:700,desc:"Snack i shëndetshëm dhe i shijshëm.",img:"faraungulliteqeruara.jpg"},
+{name:"Fasule pllaqi",price:300,desc:"Fasule tradicionale për gatime.",img:"fasulepllaqi.jpg"},
+{name:"Fik i thatë",price:600,desc:"Natyral dhe shumë i ëmbël.",img:"fikithat.jpg"},
+{name:"Huamitos",price:1000,desc:"Produkt ekzotik me shije unike.",img:"huamitoss.jpg"},
+{name:"Hurma parajsa",price:900,desc:"Hurma të buta dhe shumë të ëmbla.",img:"hurmaparajsa.jpg"},
+{name:"Hurma arabe",price:800,desc:"Energjike dhe natyrale.",img:"hurmaarabe.jpg"},
+{name:"Kajsi të thata",price:700,desc:"Të pasura me vitamina.",img:"kajsitethata.jpg"},
+{name:"Kikirik me kripë",price:500,desc:"Snack perfekt për çdo moment.",img:"kikirikmekrip.jpg"},
+{name:"Kivi i thatë",price:900,desc:"Shije e freskët dhe e ëmbël.",img:"kiviithat.jpg"},
+{name:"Kumbulla",price:650,desc:"Ndihmon tretjen.",img:"kumbulla.jpg"},
+{name:"Lajthi",price:900,desc:"Lajthi të freskëta premium.",img:"lajthi.jpg"},
+{name:"Misër i pjekur",price:400,desc:"Snack i kripur shumë i shijshëm.",img:"miseripjekur.jpg"},
+{name:"Mjalt",price:1000,desc:"Mjalt natyral 100%.",img:"mjalte.jpg"},
+{name:"Qiqra të pjekura",price:400,desc:"Snack i shëndetshëm.",img:"qiqratepjekme.jpg"},
+{name:"Papaya",price:1100,desc:"Frut ekzotik i thatë.",img:"papaya.jpg"},
+{name:"Rrush i bardhë",price:600,desc:"I ëmbël dhe natyral.",img:"rrushibardheithate.jpg"},
+{name:"Rrush i zi",price:650,desc:"Plot shije dhe energji.",img:"rrushithateizi.jpg"},
+{name:"Stika",price:1200,desc:"Stika premium shumë e shijshme.",img:"stika.jpg"},
+{name:"Stika të kuqe",price:1250,desc:"Variant special.",img:"stikatekuqe.jpg"},
+{name:"Stika të qeruara",price:1300,desc:"Gati për konsum.",img:"stikaqeruara.jpg"},
+{name:"Vaj ulliri",price:1200,desc:"Extra virgin cilësi e lartë.",img:"vajulliri.jpg"}
 ];
 
-const grid = document.getElementById("productGrid");
+const grid = document.getElementById("grid");
 
 products.forEach((p,i)=>{
-grid.innerHTML += `
+grid.innerHTML+=`
 <div class="product" onclick="openModal(${i})">
-<img src="${p.image}">
+<img src="images/${p.img}">
 <h4>${p.name}</h4>
 </div>`;
 });
 
-const modal = document.getElementById("modal");
-const modalName = document.getElementById("modalName");
-const modalDesc = document.getElementById("modalDesc");
-const modalPrice = document.getElementById("modalPrice");
-const modalImg = document.getElementById("modalImg");
-
+const modal=document.getElementById("modal");
 let current;
 
 function openModal(i){
-current=i;
-const p = products[i];
+current=products[i];
 modal.style.display="block";
-modalName.innerText=p.name;
-modalDesc.innerText=p.desc;
-modalPrice.innerText=p.price;
-modalImg.src=p.image;
+document.getElementById("mImg").src="images/"+current.img;
+document.getElementById("mName").innerText=current.name;
+document.getElementById("mDesc").innerText=current.desc;
+document.getElementById("mPrice").innerText=current.price+" ALL";
 }
 
 function closeModal(){
 modal.style.display="none";
 }
 
-function orderNow(){
-const p = products[current];
-window.open(`https://wa.me/${phoneNumber}?text=Dua%20te%20porosis%20${p.name}`);
+function order(){
+window.open(`https://wa.me/${number}?text=Dua te porosis: ${current.name}`);
 }
 
-document.getElementById("waBtn").href = "https://wa.me/" + phoneNumber;
-
-
+document.getElementById("waBtn").href=`https://wa.me/${number}`;
 
