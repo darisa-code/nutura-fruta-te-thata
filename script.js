@@ -1,7 +1,7 @@
 const number = "355 69 543 2222";
 
 const products = [
-{name:"Arra",price:900,desc:"Arra të freskëta dhe të pasura me omega-3.",img:"arrash.jpg"},
+{name:"Arra",price:900,desc:"Arra të freskëta dhe të pasura me omega-3.",img:"arra.jpg"},
 {name:"Arra Braziliane",price:1200,desc:"Burim i selenit dhe energjisë.",img:"arrabraziliane.jpg"},
 {name:"Arra Pecan",price:1300,desc:"Shije e ëmbël dhe teksturë kremoze.",img:"arrapecan.jpg"},
 {name:"Arra Makadame",price:1500,desc:"Premium, shumë të buta dhe të shijshme.",img:"arramakadame.jpg"},
