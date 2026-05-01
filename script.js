@@ -37,10 +37,10 @@ const grid = document.getElementById("grid");
 
 products.forEach((p,i)=>{
   grid.innerHTML += `
-  <div class="product" onclick="openModal(${i})">
-    <img src="images/${p.img}">
-    <h4>${p.name}</h4>
-  </div>`;
+    <div class="product" onclick="openModal(${i})">
+      <img src="./images/${p.img}">
+      <h4>${p.name}</h4>
+    </div>`;
 });
 
 const modal = document.getElementById("modal");
@@ -49,7 +49,8 @@ let current;
 function openModal(i){
   current = products[i];
   modal.style.display = "block";
-  document.getElementById("mImg").src = "images/" + current.img;
+
+  document.getElementById("mImg").src = "./images/" + current.img;
   document.getElementById("mName").innerText = current.name;
   document.getElementById("mDesc").innerText = current.desc;
   document.getElementById("mPrice").innerText = current.price + " ALL";
