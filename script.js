@@ -1,4 +1,4 @@
-const number = "+355 69 543 2222"; // ndrysho numrin këtu
+const number = "355 69 543 2222";
 
 const products = [
 {name:"Arra",price:900,desc:"Arra të freskëta dhe të pasura me omega-3.",img:"arrash.jpg"},
