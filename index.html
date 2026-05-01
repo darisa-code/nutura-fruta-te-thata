@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nutura | Fruta të Thata</title>
+<title>Nutura</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Playfair+Display&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
@@ -13,38 +13,33 @@
 
 <header>
     <div class="logo">Nutura</div>
-    <div class="center">
-        <h1>Nutura Fruta të Thata</h1>
-        <p class="slogan">Shije natyrale • Cilësi premium</p>
-    </div>
+    <h1>Nutura Fruta të Thata</h1>
+    <p class="slogan">Shije natyrale, cilësi premium</p>
 </header>
 
-<section class="products">
-    <div id="productGrid"></div>
-</section>
+<div id="grid"></div>
 
 <!-- MODAL -->
 <div id="modal" class="modal">
-    <div class="modal-content">
-        <span onclick="closeModal()" class="close">&times;</span>
-        <img id="modalImg">
-        <h2 id="modalName"></h2>
-        <p id="modalDesc"></p>
-        <p id="modalPrice"></p>
-        <button onclick="orderNow()">Porosit në WhatsApp</button>
-    </div>
+  <div class="modal-content">
+    <span onclick="closeModal()" class="close">&times;</span>
+    <img id="mImg">
+    <h2 id="mName"></h2>
+    <p id="mDesc"></p>
+    <h3 id="mPrice"></h3>
+    <button onclick="order()">Porosit</button>
+  </div>
 </div>
 
 <!-- WHATSAPP -->
 <a id="waBtn" class="whatsapp" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
-    <span id="phoneText">+355XXXXXXXXX</span>
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+  <span id="waNumber">+355XXXXXXXXX</span>
 </a>
 
 <script src="script.js"></script>
 </body>
 </html>
-
 
 
 
