@@ -1,4 +1,4 @@
-const number = "355 69 543 2222";
+const number = "355695432222";
 
 const products = [
 {name:"Arra",price:900,desc:"Arra të freskëta.",img:"arra.jpg"},
@@ -15,7 +15,7 @@ const products = [
 {name:"Fik i thatë",price:600,desc:"I ëmbël natyral.",img:"fikithat.jpg"},
 {name:"Huamitos",price:1000,desc:"Ekzotik.",img:"huamitoss.jpg"},
 {name:"Hurma",price:800,desc:"Energjike.",img:"hurma.jpg"},
-{name:"Hurma arabe",price:850,desc:"Shumë të buta.",img:"hurmaarabe.jpg"}
+{name:"Hurma arabe",price:850,desc:"Shumë të buta.",img:"hurmaarabe.jpg"},
 {name:"Kajsi të thata",price:700,desc:"Të pasura me vitamina.",img:"kajsitethata.jpg"},
 {name:"Kikirik me kripë",price:500,desc:"Snack perfekt për çdo moment.",img:"kikirikmekrip.jpg"},
 {name:"Kivi i thatë",price:900,desc:"Shije e freskët dhe e ëmbël.",img:"kiviithat.jpg"},
@@ -36,32 +36,33 @@ const products = [
 const grid = document.getElementById("grid");
 
 products.forEach((p,i)=>{
-grid.innerHTML+=`
-<div class="product" onclick="openModal(${i})">
-<img src="images/${p.img}">
-<h4>${p.name}</h4>
-</div>`;
+  grid.innerHTML += `
+  <div class="product" onclick="openModal(${i})">
+    <img src="images/${p.img}">
+    <h4>${p.name}</h4>
+  </div>`;
 });
 
-const modal=document.getElementById("modal");
+const modal = document.getElementById("modal");
 let current;
 
 function openModal(i){
-current=products[i];
-modal.style.display="block";
-document.getElementById("mImg").src="images/"+current.img;
-document.getElementById("mName").innerText=current.name;
-document.getElementById("mDesc").innerText=current.desc;
-document.getElementById("mPrice").innerText=current.price+" ALL";
+  current = products[i];
+  modal.style.display = "block";
+  document.getElementById("mImg").src = "images/" + current.img;
+  document.getElementById("mName").innerText = current.name;
+  document.getElementById("mDesc").innerText = current.desc;
+  document.getElementById("mPrice").innerText = current.price + " ALL";
 }
 
 function closeModal(){
-modal.style.display="none";
+  modal.style.display = "none";
 }
 
 function order(){
-window.open(`https://wa.me/${number}?text=Dua te porosis: ${current.name}`);
+  window.open(
+    `https://wa.me/${number}?text=${encodeURIComponent("Dua të porosis: " + current.name)}`
+  );
 }
 
-document.getElementById("waBtn").href=`https://wa.me/${number}`;
-
+document.getElementById("waBtn").href = `https://wa.me/${number}`;
