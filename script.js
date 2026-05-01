@@ -1,177 +1,95 @@
+const phoneNumber = "355XXXXXXXXX"; // VENDOS NUMRIN TEND
+
 const products = [
 {
 name:"Arra",
-price:1200,
+price:"1200 Lek/kg",
 image:"images/arra.jpg",
-desc:"Arra natyrale, të pasura me omega-3 dhe shumë të shëndetshme."
+desc:"Arra natyrale, të pasura me omega-3 dhe shumë të shëndetshme për zemrën."
 },
 {
 name:"Arra Braziliane",
-price:1800,
-image:"images/arrabraziliane.jpg",
-desc:"Arra braziliane me shije të pasur dhe burim i mirë i selenit."
+price:"1800 Lek/kg",
+image:"images/arrabraziliane.jfif",
+desc:"Arra braziliane premium, burim i selenit dhe energjisë natyrale."
 },
 {
 name:"Arra Pecan",
-price:2000,
-image:"images/arrapecan.jpg",
-desc:"Arra pecan premium, ideale për snacks dhe ëmbëlsira."
+price:"2000 Lek/kg",
+image:"images/arrapecan.jfif",
+desc:"Arra pecan të buta dhe shumë të shijshme, ideale për snack dhe ëmbëlsira."
 },
 {
-name:"Arra Makadame",
-price:2500,
-image:"images/arremakadame.jpg",
-desc:"Arra makadame shumë të buta dhe me shije luksoze."
+name:"Arre Makadame",
+price:"2500 Lek/kg",
+image:"images/arremakadame.webp",
+desc:"Arra makadame luksoze, shumë të pasura dhe me shije të veçantë."
 },
 {
 name:"Bajame",
-price:900,
+price:"1400 Lek/kg",
 image:"images/bajame.jpg",
-desc:"Bajame të freskëta dhe të pasura me proteina."
+desc:"Bajame të freskëta dhe të pasura me proteina dhe fibra."
 },
 {
-name:"Bajame pa kripë",
-price:950,
-image:"images/bajamepakripe.jpg",
-desc:"Bajame natyrale pa kripë, ideale për dietë."
-},
-{
-name:"Bajame vendi",
-price:1000,
+name:"Bajame Vendit",
+price:"1300 Lek/kg",
 image:"images/bajamevendi.jpg",
-desc:"Bajame vendase me cilësi të lartë."
+desc:"Bajame shqiptare, natyrale dhe me shije autentike."
 },
 {
-name:"Boronica e Tropojes",
-price:1500,
-image:"images/boronica.jpg",
-desc:"Boronica të thata nga Tropoja, shumë të shëndetshme."
+name:"Boronica Tropoje",
+price:"2200 Lek/kg",
+image:"images/boronica-tropoje.jpg",
+desc:"Boronica nga Tropoja, shumë të pasura me antioksidantë."
 },
 {
-name:"Fara kungulli",
-price:700,
-image:"images/farakungulli.jpg",
-desc:"Fara kungulli të qëruara, perfekte për snack."
+name:"Fik i Thate",
+price:"900 Lek/kg",
+image:"images/fikithat.png",
+desc:"Fik të thatë të ëmbël dhe energjik."
 },
 {
-name:"Fasule pllaqi",
-price:400,
-image:"images/fasulepllaqi.jpg",
-desc:"Fasule të bardha për gatime tradicionale."
+name:"Hurma Arabe",
+price:"800 Lek/kg",
+image:"images/hurma-arabe.jpg",
+desc:"Hurma të buta dhe shumë të ëmbla, ideale për energji."
 },
 {
-name:"Fik i thatë",
-price:800,
-image:"images/fikithat.jpg",
-desc:"Fik i thatë i ëmbël dhe energjik."
+name:"Kajsi të Thata",
+price:"1000 Lek/kg",
+image:"images/kajsitethata.jfif",
+desc:"Kajsi të thata me shije të freskët dhe natyrale."
 },
 {
-name:"Huamitos",
-price:900,
-image:"images/huamitos.jpg",
-desc:"Produkt i veçantë me shije ekzotike."
-},
-{
-name:"Hurma arabe",
-price:1200,
-image:"images/hurmaarabe.jpg",
-desc:"Hurma arabe shumë të ëmbla dhe cilësore."
-},
-{
-name:"Hurma",
-price:1000,
-image:"images/hurma.jpg",
-desc:"Hurma natyrale për energji të shpejtë."
-},
-{
-name:"Hurma parajsa",
-price:1300,
-image:"images/hurmaparajsa.jpg",
-desc:"Hurma premium me shije të veçantë."
-},
-{
-name:"Kajsi të thata",
-price:900,
-image:"images/kajsitethata.jpg",
-desc:"Kajsi të thata të ëmbla dhe të shëndetshme."
-},
-{
-name:"Kikirik me kripë",
-price:600,
-image:"images/kikirik.jpg",
+name:"Kikirik me Kripë",
+price:"700 Lek/kg",
+image:"images/kikirikmekrip.jfif",
 desc:"Kikirik të pjekur me kripë, snack perfekt."
 },
 {
-name:"Kivi i thatë",
-price:1100,
-image:"images/kivi.jpg",
-desc:"Kivi i thatë me shije tropikale."
+name:"Kivi i Thate",
+price:"1500 Lek/kg",
+image:"images/kiviithat.jfif",
+desc:"Kivi i thatë me shije ekzotike dhe të veçantë."
 },
 {
 name:"Kumbulla",
-price:850,
-image:"images/kumbulla.jpg",
-desc:"Kumbulla të thata të shijshme dhe të shëndetshme."
+price:"900 Lek/kg",
+image:"images/kumbulla.png",
+desc:"Kumbulla të thata për tretje dhe shëndet."
 },
 {
 name:"Lajthi",
-price:1200,
-image:"images/lajthi.jpg",
-desc:"Lajthi të freskëta dhe shumë të shijshme."
+price:"1400 Lek/kg",
+image:"images/lajthi.jfif",
+desc:"Lajthi të freskëta dhe të shijshme."
 },
 {
-name:"Misër i pjekur",
-price:500,
-image:"images/miser.jpg",
-desc:"Misër i pjekur krokant."
-},
-{
-name:"Mjaltë",
-price:1500,
+name:"Mjalte",
+price:"1200 Lek/kg",
 image:"images/mjalte.jpg",
-desc:"Mjaltë natyral i pastër."
-},
-{
-name:"Papaya",
-price:1000,
-image:"images/papaya.jpg",
-desc:"Papaya e thatë me shije tropikale."
-},
-{
-name:"Qiqra të pjekura",
-price:600,
-image:"images/qiqra.jpg",
-desc:"Qiqra krokante dhe shumë të shijshme."
-},
-{
-name:"Rrush i thatë",
-price:700,
-image:"images/rrush.jpg",
-desc:"Rrush i thatë i ëmbël dhe energjik."
-},
-{
-name:"Stika",
-price:900,
-image:"images/stika.jpg",
-desc:"Stika të freskëta dhe të shijshme."
-},
-{
-name:"Stika të qëruara",
-price:1100,
-image:"images/stikaqeruara.jpg",
-desc:"Stika pa lëkurë, gati për konsum."
-},
-{
-name:"Stika të kuqe",
-price:1000,
-image:"images/stikakuqe.jpg",
-desc:"Stika të kuqe me shije të veçantë."
-},
-{
-name:"Vaj ulliri",
-price:1200,
-image:"images/vajulliri.jpg",
-desc:"Vaj ulliri ekstra i virgjër."
+desc:"Mjaltë natyral shqiptar, shumë i shëndetshëm."
 }
 ];
 
@@ -182,21 +100,25 @@ grid.innerHTML += `
 <div class="product" onclick="openModal(${i})">
 <img src="${p.image}">
 <h4>${p.name}</h4>
-</div>
-`;
+</div>`;
 });
 
 const modal = document.getElementById("modal");
+const modalName = document.getElementById("modalName");
+const modalDesc = document.getElementById("modalDesc");
+const modalPrice = document.getElementById("modalPrice");
+const modalImg = document.getElementById("modalImg");
+
+let current;
 
 function openModal(i){
+current=i;
 const p = products[i];
 modal.style.display="block";
-document.getElementById("modalName").innerText=p.name;
-document.getElementById("modalDesc").innerText=p.desc;
-document.getElementById("modalPrice").innerText="Çmimi: "+p.price+" Lek";
-document.getElementById("modalImg").src=p.image;
-
-window.selectedProduct = p.name;
+modalName.innerText=p.name;
+modalDesc.innerText=p.desc;
+modalPrice.innerText=p.price;
+modalImg.src=p.image;
 }
 
 function closeModal(){
@@ -204,6 +126,11 @@ modal.style.display="none";
 }
 
 function orderNow(){
-window.open("https://wa.me/355XXXXXXXXX?text=Dua%20te%20porosis:%20"+window.selectedProduct);
+const p = products[current];
+window.open(`https://wa.me/${phoneNumber}?text=Dua%20te%20porosis%20${p.name}`);
 }
+
+document.getElementById("waBtn").href = "https://wa.me/" + phoneNumber;
+
+
 
